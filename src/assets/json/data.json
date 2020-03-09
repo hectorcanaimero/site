@@ -1,0 +1,56 @@
+[
+    {
+        "menu": {
+            "logo": "be.",
+            "logo2": "awesome()",
+            "source":[
+                {
+                    "icon": "fas fa-home",
+                    "name": "home",
+                    "redirect": ""
+                },
+                {
+                    "icon": "fas fa-coffee",
+                    "name": "sobre",
+                    "redirect": "/sobre"
+                },
+                {
+                    "icon": "fas fa-briefcase",
+                    "name": "portfolio",
+                    "redirect": "/portfolio"
+                },
+                {
+                    "icon": "fas fa-envelope-open",
+                    "name": "fale conosco",
+                    "redirect": "/contact"
+                }
+            ]
+        },
+        "home":{
+            "title": "Héctor Velásquez",
+            "description": "Full Stack Developer",
+            "bg": "./assets/images/bg_home.jpg"
+        },
+        "sobre": {
+            "avatar": "./assets/images/avatar.jpg",
+            "titulo": "Quién Soy?",
+            "about": "Eu sou Desenvolvedor Fullstack, que eu gosto de desafiar meus conhecimentos e embarcar em coisas novas. Angular, NodeJs, Ionic e Python dominam meus dias. Teólogo do Linux.",
+            "services": [  "one", "two", "three", "four", "five", "six"],
+            "skills": [
+                { "name": "Angular", "value": 80, "color": "#2B6A99", "delay": "2.5s" },
+                { "name": "NodeJs + Express", "value": 70, "color": "#469B34", "delay": "2.65s"},
+                { "name": "CSS3 + SCSS", "value": 75, "color": "#2B9990", "delay": "2.80s"},
+                { "name": "API REST", "value": 82, "color": "#788974", "delay": "2.95s"},
+                { "name": "PHP", "value": 76, "color": "#2B9990", "delay": "3.1s"},
+                { "name": "Python", "value": 68, "color": "#2B9990", "delay": "3.25s"},
+                { "name": "Wordpress", "value": 91, "color": "#469B34", "delay": "3.4s"},
+                { "name": "Magento 2", "value": 71, "color": "#2B6A99", "delay": "3.55s"}
+            ],
+            "social":[
+                { "icon": "fab fa-instagram", "link": "#" },
+                { "icon": "fab fa-linkedin", "link": "#" },
+                { "icon": "fab fa-github", "link": "#" }
+            ]
+        }
+    }
+]

@@ -1,0 +1,17 @@
+<h1 class="logo">
+    <span>{{ json.logo }}</span>
+    <span>{{ json.logo2 }}</span>
+</h1>
+<ul class="nav flex-column">
+    <li class="nav-item animated fadeInLeft" 
+        *ngFor="let item of json.source; let i=index" 
+        [ngStyle]="{ 'animation-delay': (i + .5) + 's' }" 
+        [ngStyle]="{ 'animation-duration': (i + 2) + 's' }"> 
+        <a class="nav-link" [routerLink]="[item.redirect]" routerLinkActive="active" >
+            <span>
+                {{ item.name }}
+                <i class="ml-1 {{ item.icon }}"></i>
+            </span>
+        </a>
+    </li>
+</ul>

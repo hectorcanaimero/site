@@ -1,0 +1,41 @@
+.titulo{
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 700;
+}
+.polaroid{
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        transition: all 0.35s;
+    }
+    &:hover{
+        transform: scale(1, 1) rotate(0deg);
+    }
+    .caption {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 2em;
+    }
+}
+
+.nav-item {
+    margin-bottom: 0;
+    a{
+        color: #fafafa;
+        font-size: 1.5rem;
+        &:hover{
+            color: #ffb510;
+            transform: scale(1.2, 1.2);
+        }
+    }
+}

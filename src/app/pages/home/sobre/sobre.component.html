@@ -1,0 +1,52 @@
+<section id="sobre" class="unique-color">
+    <div class="flex-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-2 mb-4">
+                    <div class="polaroid z-depth-2 wow fadeIn" data-wow-delay="1s">
+                        <img [src]="json.avatar" class="img-fluid mx-auto d-block">
+                        <div class="caption font-gloria">yop</div>
+                      </div>
+                </div>
+                <div class="col-md-7 mb-4">
+                    <div class="wow fadeIn" data-wow-delay="1.3s">
+                        <h1 class="titulo font-gloria" [innerHtml]="json.titulo"></h1>
+                        <p class="white-text" [innerHtml]="json.about"></p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="mask z-depth-3 rgba-black-light wow fadeIn" data-wow-delay="1.6s">
+                        <ul class="nav flex-column">
+                            <li class="nav-item" *ngFor="let social of json.social">
+                                <a class="nav-link" [href]="social.link" target="_blank">
+                                    <i class="ml-1 {{ social.icon }}"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="wow fadeIn" data-wow-delay="2.1s">
+                        <div class="p-xl-3 rounded mask z-depth-3 rgba-black-light">
+                            <h3 class="white-text botder-bottom pb-1 mb-3 font-gloria">
+                                Mis Skills
+                            </h3>
+                            <div class="row">
+                                <div class="col-12 col-md-3" *ngFor="let skill of json.skills; let i =index">
+                                    <div class="wow fadeIn"         
+                                        [ngStyle]="{ 'animation-delay': skill.delay }" 
+                                        [ngStyle]="{ 'animation-duration': (i + 2) + 's' }">
+                                        <p class="mb-0 white-text">{{ skill.name }}</p>
+                                        <progress-bar [progress]="skill.value" [color]="skill.color"></progress-bar>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
